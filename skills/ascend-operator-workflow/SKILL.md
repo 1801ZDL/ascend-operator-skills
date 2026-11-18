@@ -16,6 +16,7 @@ description: 组织 Triton/Ascend 算子开发、调试和优化任务，选择�
 | 当前需要 | 入口 |
 |---|---|
 | 认识工程、确认真实源码/工具/IR | [ascend-environment](../ascend-environment/SKILL.md) |
+| 核对 NPU-IR/LLVM 配套、复用本地构建或增量编译 | [版本核对与构建](../ascend-environment/references/npu-ir-llvm-build.md) |
 | 测设备耗时、比较版本或检查 PMU | [ascend-benchmark](../ascend-benchmark/SKILL.md) |
 | 抓取和解释仿真流水 | [ascend-simulate](../ascend-simulate/SKILL.md) |
 | 精度、编译、启动或采集错误 | [ascend-debug](../ascend-debug/SKILL.md) |

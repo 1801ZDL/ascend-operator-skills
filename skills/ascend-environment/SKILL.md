@@ -1,6 +1,6 @@
 ---
 name: ascend-environment
-description: 解释并定位 Triton/Ascend 算子工程背景，核对测试到JIT、实际Python/编译器、IR阶段、override、lowering与launcher ABI。用于新任务入场或运行身份排查，具体服务器路径需重新确认。
+description: 解释并定位 Triton/Ascend 算子工程背景，核对测试到JIT、实际Python/编译器、IR阶段、override、lowering与launcher ABI。核对 NPU-IR 与 llvm-project 配套版本并优先复用已有构建，必要时配置和编译。用于新任务入场或运行身份排查，具体服务器路径需重新确认。
 ---
 
 # Ascend 工程背景与运行身份
@@ -43,3 +43,5 @@ python scripts/capture_identity.py --distribution triton-ascend \
 需要源码变更时使用独立分支/worktree及私有构建，遵守用户指定上游和基线；功能改动落在负责生成 IR 的 pass / lowering 层。DynamicCVPipeline 相关规划通常在其 `lib/` 与 `include/`，而不是用 Python compile 拦截替代正式实现。
 
 后端驱动、CLI 兼容和诊断原型也可能是正确修改位置，按问题归属选择并标明范围。构建入口、LLVM 宏、CANN flags随版本变化；按当前树检查，不把 `setup.py`、`setup_ascend.py` 或旧 workaround 固定为通用规则。涉及安装时先确认本任务已授权的目标环境，保留可回退身份。
+
+涉及 NPU-IR/LLVM 配套、已有构建复用或编译时，先读[版本核对与构建](references/npu-ir-llvm-build.md)。先定位本地可用的构建证据，只有缺少配套目标或需要验证本次源码时才配置或编译。
