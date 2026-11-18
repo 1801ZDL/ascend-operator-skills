@@ -1,0 +1,61 @@
+{
+  "version": "0.3.0",
+  "date": "2026-11-17",
+  "status": "LOCAL_OFFLINE_RELEASE_CHECKS_PASSED",
+  "scope": "public repository packaging, isolated installer behavior and offline helper checks",
+  "runtime_requirement": "Python 3.8+ standard library; no pip dependencies",
+  "planned_ci": "GitHub Actions: Linux Python 3.8/3.12 and Windows Python 3.12; remote CI not yet run",
+  "prior_service_smoke": {
+    "date": "2026-11-17",
+    "upstream_revision": "270da9a0ed92296977cde307ec8caab5895b3c23",
+    "credential_kind": "upstream documented public trial credential used only for smoke; not shipped",
+    "operations": [
+      "health",
+      "search",
+      "source",
+      "search with Chinese query",
+      "registered graph template"
+    ],
+    "result": "five HTTP 200 JSON responses; source truncation observed",
+    "scope": "transport/schema only; not all KG facts or service availability guarantee"
+  },
+  "not_executed": [
+    "NPU queries/kernel launches",
+    "compiler/SDK installation or builds",
+    "hardware performance/simulator execution",
+    "actual external Agent invocation or paid model calls",
+    "public remote push/deployment"
+  ],
+  "local_validation": {
+    "system": "Linux",
+    "python": "3.11.14",
+    "skill_frontmatter_validators": [
+      "ascend-benchmark",
+      "ascend-debug",
+      "ascend-environment",
+      "ascend-knowledge",
+      "ascend-operator-workflow",
+      "ascend-optimize",
+      "ascend-simulate"
+    ],
+    "stdlib_offline_unittest_cases": 31,
+    "installer_tests": 13,
+    "existing_helper_tests": 18,
+    "relative_links_checked": 38,
+    "python_sources_grammar_checked": 9,
+    "python_grammar_target": "3.8; actual local execution uses the Python version above",
+    "installer_behaviors": [
+      "dry-run/check have no target writes",
+      "whole bundle plus helper/license install",
+      "idempotent reinstall",
+      "unknown and symlink conflict preservation",
+      "edited installed files protected",
+      "upgrade/backups and version checks",
+      "uninstall only unchanged managed skills",
+      "normal exception rollback for fresh install and upgrade",
+      "busy lock not bypassed"
+    ],
+    "public_source_review": "Machine-specific profile replaced, local experiment paths removed; no SDK binaries, private ISA, trial keys or third-party implementation copied."
+  },
+  "remote_ci_status": "configured, not yet run; platform presets are not live Agent integration tests"
+}

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Ascend 仿真流水"
+  short_description: "Capture bounded Ascend traces and bind events to real code"

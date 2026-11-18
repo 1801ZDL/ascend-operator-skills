@@ -1,0 +1,3 @@
+interface:
+  display_name: "Ascend 知识检索"
+  short_description: "Retrieve Ascend KG sources and verify local applicability"

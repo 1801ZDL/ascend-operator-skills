@@ -1,0 +1,3 @@
+interface:
+  display_name: "Ascend 算子工作流"
+  short_description: "Route Ascend operator work into focused, extensible stages"

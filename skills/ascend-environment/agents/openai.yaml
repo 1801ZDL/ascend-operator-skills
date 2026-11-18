@@ -1,0 +1,3 @@
+interface:
+  display_name: "Ascend 工程背景"
+  short_description: "Resolve Ascend sources, toolchains, IR stages and launch ABI"

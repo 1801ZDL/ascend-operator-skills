@@ -1,0 +1,35 @@
+{
+  "template_version": 1,
+  "task": "填写当前任务",
+  "attempt": "填写执行尝试或只读分析标识",
+  "intent": "功能/诊断/设备性能/仿真/编译/离线分析",
+  "identity": {
+    "source_and_input": {},
+    "effective_options": {},
+    "tools_and_binary": {},
+    "runtime_and_launch": {}
+  },
+  "scope": {
+    "hardware_or_simulation": "unverified",
+    "grid_and_work": "unverified",
+    "measurement_window_and_units": "unverified"
+  },
+  "outcome": {
+    "target_executed": null,
+    "numerical": "not_checked",
+    "parse": "not_checked",
+    "child_exit": "not_checked",
+    "cleanup": "not_checked"
+  },
+  "raw_artifacts": [],
+  "observations": [],
+  "inferences": [],
+  "unknowns": [],
+  "next_decision": "",
+  "cost": {
+    "wall_seconds": null,
+    "peak_RAM_bytes": null,
+    "peak_output_bytes_and_metric": null,
+    "model_calls_or_tokens": null
+  }
+}

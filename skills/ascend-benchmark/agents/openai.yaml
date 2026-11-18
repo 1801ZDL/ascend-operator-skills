@@ -1,0 +1,3 @@
+interface:
+  display_name: "Ascend 性能测试"
+  short_description: "Measure comparable Ascend timings and qualify profiler data"

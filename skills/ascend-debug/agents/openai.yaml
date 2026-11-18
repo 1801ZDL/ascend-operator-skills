@@ -1,0 +1,3 @@
+interface:
+  display_name: "Ascend 精度与编译诊断"
+  short_description: "Diagnose Ascend accuracy, compile and execution failures"

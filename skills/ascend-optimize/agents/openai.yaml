@@ -1,0 +1,3 @@
+interface:
+  display_name: "Ascend 性能优化"
+  short_description: "Find critical-path bottlenecks and validate Ascend optimizations"
